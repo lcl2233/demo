@@ -1,0 +1,17 @@
+server:
+  port: 8888
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8100/eureka/
+
+spring:
+  cloud:
+    config:
+      server:
+          git:
+            uri: http://192.168.30.4/liuchangli/spring-config.git
+            username: liuchangli
+            password: 12345678
+            search-paths: spring-config

@@ -1,0 +1,30 @@
+server:
+  port: 9001
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8100/eureka/
+
+rabbitmq:
+      host: localhost
+      port: 15672
+      username: guest
+      password: guest
+
+#默认重试, FeignClient可以使用ribbon的重试,或者使用FeignClient自带的Retryer而不用配置下面的设置,RestTemplate无法自动重试
+ribbon:
+  ReadTimeout: 30000
+  ConnectTimeout: 250
+  MaxAutoRetries: 2
+  MaxAutoRetriesNextServer: 2
+  OkToRetryOnAllOperations: true
+
+#调长断路器超时或禁用断路器超时，以免在重试前就被断路器断开
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
