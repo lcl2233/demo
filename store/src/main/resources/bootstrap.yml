@@ -7,3 +7,5 @@ spring:
       label: master
       uri: http://localhost:8888/
       name: config
+      username: user
+      password: 1234567

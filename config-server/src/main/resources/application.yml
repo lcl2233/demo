@@ -15,3 +15,9 @@ spring:
             username: liuchangli
             password: 12345678
             search-paths: spring-config
+          overrides: #属性覆盖或者添加
+                name: didi
+security:
+  user:
+    name: user
+    password: 1234567

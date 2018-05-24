@@ -1,0 +1,7 @@
+config:
+    username: liuchanglikokoko
+    password: 12345678
+    sex: 1
+    height: 170
+
+from: git-dev-1.0

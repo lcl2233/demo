@@ -3,3 +3,5 @@ spring:
     name: config
   profiles:
     active: dev,test,mo,prod
+
+#spring.profiles.active: native * 默认去src/main/resource 下查找配置文件

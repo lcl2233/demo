@@ -17,9 +17,17 @@ public class Config {
     @Value("${config.username}")
     private String from;
 
-    @RequestMapping("/config")
+    @Value("${name}")
+    private String name;
+
+    @RequestMapping("/config-username")
     public String form(){
         return this.from;
+    }
+
+    @RequestMapping("/name")
+    public String name(){
+        return this.name;
     }
 
     @RequestMapping("/environment")
