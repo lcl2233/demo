@@ -11,9 +11,9 @@ spring:
     config:
       server:
           git:
-            uri: http://192.168.30.4/liuchangli/spring-config.git
-            username: liuchangli
-            password: 12345678
+            uri: 
+            username: 
+            password: 
             search-paths: spring-config
           overrides: #属性覆盖或者添加
                 name: didi
